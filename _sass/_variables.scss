@@ -18,8 +18,8 @@ $blue: #4183C4;
 // Main theme colors 
 // Some cool main theme colors(violet:#8476ad;blue:#5cacee;red:#ff7373,#ff6f69;green:#6acf64,#2ddbb3;orange:#ffa268)
 
-$mono-color:#8476ad;                // main theme color(header, links, footer icons, buttons, post-title)
-$hl-color: $darkGray;              // header link color (author name and posted on date) for blog post meta 
+$mono-color:#ffa268;                // main theme color(header, links, footer icons, buttons, post-title)
+$hl-color: #FFFFC7;              // header link color (author name and posted on date) for blog post meta 
 $navbar-hover-color:$gray;        // navbar hover color (site name and navbar links hover color)
 $link-color: $darkerGray;        // normal hyperlink color other than the ones above.
 
@@ -33,7 +33,7 @@ $h4-color: $gray;
 
 // Your avatar
 
-$avatar: "/images/avatar.jpg";
+$avatar: "/images/rc-1.jpg";
 
 
 // Font stacks
@@ -48,3 +48,21 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+
+// For code highlights
+
+$border: #ccc;
+$lightBorder: #eee;
+
+$normalText: #777;
+$darkText: #666;
+$lightText: #aaa;
+$xLightText: #ccc;
+
+$link: #4eb0eb;
+$emLink: #40d47e;
+$lightLink: #aaa;
+
+//$textHighlight: #ffffe0;
+
+$textHighlight: rgb(249, 249, 249);
