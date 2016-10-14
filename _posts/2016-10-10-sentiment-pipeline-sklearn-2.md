@@ -200,7 +200,7 @@ Regression [here](http://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf), a quick
 article on how to pick the right classifier
 [here](http://blog.echen.me/2011/04/27/choosing-a-machine-learning-classifier/),
 and a great walkthrough of how logistic regression works [here](http://nbviewer.
-jupyter.org/github/justmarkham/DAT8/blob/master/notebooks/12_logistic_regression
+jupyter.org/github/justmarkham/DAT8/blob/master/notebooks/12_logistic_regression.ipynb
 ). 
 
 **In [5]:**

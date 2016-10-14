@@ -86,7 +86,7 @@ def genericize_mentions(text):
 scikit-learn's pipelines are dope, but every step has to look like a sklearn
 transformer. Basically this means that everything that goes into a pipeline has
 to implement `fit()` and `transform()` methods. The built-in [FunctionTranformer
-](scikit-learn.org/stable/modules/generated/sklearn.preprocessing.FunctionTransf
+](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.FunctionTransf
 ormer.html) does this handily, but items in a pipeline get passed as a full
 array/series/list to each step, not individual items. So, we're going to wrap
 our custom functions in a function that creates a list comprehension that
