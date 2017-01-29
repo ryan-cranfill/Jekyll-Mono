@@ -18,16 +18,18 @@ I currently work as a Data Scientist for Earshot, a real-time social media marke
 As a Data Scientist, I'm responsible for identifying opportunities to use the vast amounts of data we have in impactful ways, then implement solutions. My work is end-to-end, including: defining requirements, exploring prior art, gathering data and analyzing it, building and evaluating a model, and then putting that model in production.
 
 
-#### Some projects I have wrapped up recently:
+#### Accomplishments include:
 
-- A pure Python implementation of a probabilistic hashtag segmentation model. 
+- Developed a new sentiment analysis engine tailored for interpreting social media sentiment.
+    - Uses [Stanford GLoVE](http://nlp.stanford.edu/projects/glove/) word vectors in conjunction with word vectors trained from 12M+ social media posts. Word vectors are  combined with metafeatures such as ratio of capitalization and number of repeated characters. Prediction is handled by a neural network with 2 hidden layers.
+    - Built using Gensim and Keras and productionized as AWS Lambda functions (one for feature extraction, one for prediction). The function evaluates the sentiment for 60M+ posts monthly costing less than $50 per month.
+    - Evaluated against a collection of posts that mentioned airlines (one of our important verticals), the new Earshot model had an overall recall of 77% – better than IBM Watson AlchemyLanguage (69%) and TextBlob (53%) on the same dataset. Recall on negative posts was 91% and precision on positive posts was 94%, with overall precision over 12% higher than the closest off-the-shelf competitor.
+
+- Created a pure Python implementation of a probabilistic hashtag segmentation model. 
     - The model uses unigrams and bigrams to calculate the most probable combination of words within a string - so "#CoolStuff2016" turns into `['cool', 'stuff', '2016']`, or "I love #coolstuff" becomes "I love cool stuff". 
     - Evaluated against 750 of the most frequent hashtags that come into Earshot, the model outputs a correct split over 90% of the time.
-- A new sentiment analysis engine tailored for interpreting social media sentiment.
-    - A bag of words style model, which takes advantage of unigrams, bigrams, and trigrams, as well as other metafeatures such as ratio of capitalization and number of repeated characters.
-    - Built using scikit-learn pipelines and NLTK, allowing it to be productionized as an AWS Lambda function. The function evaluates the sentiment for 60M+ posts monthly costing less than $60 per month.
-    - Evaluated against a collection of posts that mentioned airlines (one of our important verticals), the new Earshot model had an overall recall of 77% – better than IBM Watson AlchemyLanguage (69%) and TextBlob (53%) on the same dataset. In addition, overall precision was over 12% higher than the closest off-the-shelf competitor.
-- Improvements to Earshot's individual vs. non-individual model.
+
+- Made improvements to Earshot's individual vs. non-individual model.
     - This model analyzes the content of a post as well as the content of the author's bio and other metadata and predicts if it is from an individual person or a non-individual (such as a restaurant, brand, or event).
     - The model is built with Python, using the scikit-learn and NLTK packages.
     - Improved existing model overall accuracy by 1.5% up to 95%, with gains in non-individual precision of 12% and recall of 8%. Crucially, these gains did not come at the expense of performance on individuals, and in fact individual performance gained modestly as well.
@@ -41,7 +43,7 @@ Prior to being promoted to Data Scientist, I was Earshot's Product Data Analyst.
 
 Day to day, I got my hands dirty with Django shells and management commands, queries to Redshift and Elasticsearch, and data exploration and visualization in Jupyter notebooks.
 
-#### A sampling of projects I completed: 
+#### Accomplishments include: 
 
 - Developed a report in Python and Django to retrieve and analyze global campaign volume to give us an idea at a glance where the biggest amounts of posts are coming from. The report runs hourly on a cron job and is hosted on an AWS EC2 server.
 - Quality-of-life enhancements for myself and other users of the Django admin interface, such as commands to copy entire campaigns, data upload via CSV, and autocomplete on fields with many values instead of dropdown lists. These enhancements reduced the amount of time spent creating and managing a typical campaign by 80% or more.
@@ -61,7 +63,7 @@ To perform the analysis, I used PostgreSQL, the scientific Python stack (NumPy, 
 
 Cleaned, analyzed, and priced lists of used and new enterprise IT hardware using publicly available and proprietary data analysis tools. Developed new and augmented existing tools to enhance and streamline pricing process. Created Market Intelligence Reports for customers to provide in-depth insights about the value of their IT assets. Resolved discrepancies between customer-sourced lists and audited reports. Created and administered Block Trades to trade equipment in competitive auctions that provided 3x-5x value uplift over traditional disposition methods.
 
-#### Some neat things I did there:
+#### Accomplishments include:
 
 - Created infrastructure using Python to sync pricing data across Redshift, Google Sheets, S3, and ElasticSearch for large partnership initiative with industry-leading VAR; data pipeline was fully operational within 3 weeks.
 - Assisted with conception and creation of Market Intelligence Reports, creating a consistent framework with which to report pricing analysis and adding a valuable tool to bolster company's brand.
@@ -73,7 +75,7 @@ Cleaned, analyzed, and priced lists of used and new enterprise IT hardware using
 
 Created and updated sales intelligence reports to assist the Regal Division's Trade Development team. Distributed reports and analyses to sales team in a timely manner to assist in achieving long and short term goals. Developed Excel VBA macros to expedite analysis procedures. 
 
-#### Good stuff:
+#### Accomplishments include:
 
 - Developed several Excel VBA macros to automate process of updating frequently revised reports, resulting in a greater than 75% time reduction for these tasks.
 - Provided analytical support to augment sales teams' efforts on division's largest ever product launch.
@@ -122,11 +124,11 @@ Won for project "[On-Board Sound Intensity](http://www.hmmh.com/on-board-sound-i
 
 Won this award for the STC chamber work mentioned above.
 
-# **Skills and Stuff I Use**
+# **Skills and Software I Use**
 
 ---
 
-These days my weapon of choice is Python for doing data analysis, exploration, visualization, and modeling. It's great for its huge open source community, [ease of use](https://xkcd.com/353/), and ubiquity in the data science world. Some packages that I use frequently:
+These days my weapon of choice is Python for doing data analysis, exploration, visualization, and modeling. I'm a big fan of its huge open source community, [ease of use](https://xkcd.com/353/), and ubiquity in the data science world. Some packages that I use frequently:
 
 <style type="text/css">
 .table {
@@ -200,7 +202,7 @@ Other software that I use frequently:
 - Ansible
 - Bash
 
-AWS things:
+AWS services:
 
 - S3
 - EC2
