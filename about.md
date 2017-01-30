@@ -17,12 +17,11 @@ I currently work as a Data Scientist for Earshot, a real-time social media marke
 
 As a Data Scientist, I'm responsible for identifying opportunities to use the vast amounts of data we have in impactful ways, then implement solutions. My work is end-to-end, including: defining requirements, exploring prior art, gathering data and analyzing it, building and evaluating a model, and then putting that model in production.
 
-
 #### Accomplishments include:
 
 - Developed a new sentiment analysis engine tailored for interpreting social media sentiment.
     - Uses [Stanford GLoVE](http://nlp.stanford.edu/projects/glove/) word vectors in conjunction with word vectors trained from 12M+ social media posts. Word vectors are  combined with metafeatures such as ratio of capitalization and number of repeated characters. Prediction is handled by a neural network with 2 hidden layers.
-    - Built using Gensim and Keras and productionized as AWS Lambda functions (one for feature extraction, one for prediction). The function evaluates the sentiment for 60M+ posts monthly costing less than $50 per month.
+    - Built using Gensim and Keras and productionized as AWS Lambda functions ([one for feature extraction](../gensim-aws-lambda), [one for prediction](../keras-aws-lambda)). The function evaluates the sentiment for 60M+ posts monthly costing less than $50 per month.
     - Evaluated against a collection of posts that mentioned airlines (one of our important verticals), the new Earshot model had an overall recall of 77% – better than IBM Watson AlchemyLanguage (69%) and TextBlob (53%) on the same dataset. Recall on negative posts was 91% and precision on positive posts was 94%, with overall precision over 12% higher than the closest off-the-shelf competitor.
 
 - Created a pure Python implementation of a probabilistic hashtag segmentation model. 
