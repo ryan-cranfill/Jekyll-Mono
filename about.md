@@ -3,17 +3,22 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-Hello and welcome! I'm Ryan Cranfill, a Chicago-based data person interested in data mining, exploration, analysis, visualization, and modeling. I've worked with a lot of different flavors of data across a lot of different industries, most currently dealing with social media data and NLP. I'm always looking for a new challenge, and love to learn.
+Hello and welcome! I'm Ryan Cranfill, a Chicago-based data person interested in data mining, exploration, analysis, visualization, and modeling. I've worked with a lot of different flavors of data across a lot of different industries. I'm always looking for a new challenge, and love to learn.
 
 # **Work Experience**
 
 ---
+### Data Scientist at [Datascope Analytics](https://www.datascopeanalytics.com)
+
+#### *2017 - Present*
+
+Currently I'm working with Datascope Analytics, a data science consulting firm. We tackle a wide variety of interesting data problems from clients across a wide variety of industries, with an eye towards incorporating human-centered design into our projects.
 
 ### Data Scientist at [Earshot](http://www.earshotinc.com)
 
-#### *2016 - Present*
+#### *2016 - 2017*
 
-I currently work as a Data Scientist for Earshot, a real-time social media marketing startup in Chicago. Our software enables brands to have positive conversations with the right consumers.
+Earshot is a real-time social media marketing startup in Chicago. Our software enables brands to have positive conversations with the right consumers.
 
 As a Data Scientist, I'm responsible for identifying opportunities to use the vast amounts of data we have in impactful ways, then implement solutions. My work is end-to-end, including: defining requirements, exploring prior art, gathering data and analyzing it, building and evaluating a model, and then putting that model in production.
 

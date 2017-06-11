@@ -54,7 +54,7 @@ Now we install the packages that we need:
 
 This will get us down to our goal package size, as Lambda is touchy about that kind of thing: 
 
-`find virtualenv/ -name \"*.so\" | xargs strip` 
+`find virtualenv/ -name "*.so" | xargs strip` 
 
 # Copy libraries to lib directory
 
